@@ -1,4 +1,6 @@
-package com.example.demo.resourses;
+package com.example.demo;
+
+
 
 import java.util.Date;
 
@@ -12,13 +14,15 @@ import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @ControllerAdvice
-public class WelcomeRestController {
+public class WelcomeRestControllerr {
 	@GetMapping("/welcome")
 	public String WelcomeMsg() {
-		String msg = "Welcome to my Page users!!!" ;
+		String msg = "Welcome to my Page users!!! hello all" ;
 		return msg ;
 		
 	}
+	
+
 	public class ExceptionHandlerController {
 
 	    public static final String DEFAULT_ERROR_VIEW = "error";
