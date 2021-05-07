@@ -1,5 +1,6 @@
 package com.example.demo;
 
+
 public class MyFirstJavaProgram {
 	
 
@@ -65,16 +66,111 @@ public class MyFirstJavaProgram {
 		String lastNam="seg";
 		System.out.println(firstNam.concat(lastNam));
 		
+		//Math
+		int a = 2;
+		int b = 4;
+		System.out.println(Math.max(a,b));
+		
+		int a1 = 5;
+		int b1 = 10;
+		System.out.println(Math.min(a1, b1));
+		
+		System.out.println(Math.sqrt(64));
+		
+		int randomNum = (int)(Math.random() * 101); 
+		System.out.println(randomNum);
+		
+		//Boolean
+		int x2 = 10;
+		int y2 = 9;
+		System.out.println(x2 > y2);
+		    
+		//if else
+		int q=20;
+		if(q>49) {
+			System.out.println("its true");
+		} else {
+			System.out.println("its false");
+		}
+		//else if
+		int clock = 22;
+		if (clock < 10) {
+		  System.out.println("Good morning.");
+		} else if (clock < 20) {
+		  System.out.println("Good day.");
+		} else {
+		  System.out.println("Good evening.");
+		}
+		
+		//switch
+		int u = 4 ;
+		switch (u) {
+		case 1 : 
+			System.out.println("its day 1");
+			break;
+		case 2 :
+			System.out.println("its day 2");
+			break;
+		case 3 :
+			System.out.println("its day 3");
+			break;
+		case 4 :
+			System.out.println("its day 4");
+			break;
+		default :
+			System.out.println("its weekend");
+			break;
+		}		
 		
 		
+		//while loop
+		int d = 1;
+		while(d<5) {
+			System.out.println(d);
+			d++;
+		}
+		
+     	int d1 = 0;
+		do{
+			System.out.println(d1);
+			d1++;
+			}
+		while(d1<5);
+		
+		//for
+		for(a=0;a<=10;a=a+2) {
+			System.out.println(a); 
+			
+		}
+		
+		String[] cars = {"bagauti", "BMW", "Ford", "tayota"};
+		for (String i : cars) {
+		  System.out.println(i);
+		}
 		
 		
+		int r ;//break used to break the loop
+		for (r=0;r<=10;r++) {
+			if(r==2) {
+				continue; //continue used to skip one iteration
+			}
+			if(r==5) {
+				break;
+			}
+			
+			System.out.println(r);
+		}
 		
-		
-		
-		
-		
-		
+		//strings
+		String[] cars1 = {"benz","ford","rolce" };
+		System.out.println(cars1[0]);
+		cars1[1]= "tata";
+		System.out.println(cars1[1]);
+		System.out.println(cars1.length);
+		for(int o=0;o<3;o++)
+		{
+			System.out.println(cars1[o]);
+		}
 		
 		
 		
