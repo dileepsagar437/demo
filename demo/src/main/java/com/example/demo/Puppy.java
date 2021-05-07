@@ -57,7 +57,7 @@ public class Puppy {
 			  System.out.println("you are old enough to acess");
 		  }
 		  }
-	  //by using 
+	  //by using different methods we can give same method names
 	  
  public Puppy(String name ) {
 	 //constructor with an parameter name
