@@ -57,7 +57,27 @@ public class Puppy {
 			  System.out.println("you are old enough to acess");
 		  }
 		  }
-	  //by using different methods we can give same method names
+	  
+	  //by using different parameters we can give same method names
+	  
+	  static int myMethod8(int x,int y) {
+		  return x-y;
+	  }
+	  
+	  static double myMethod8(double x,double y) {
+		  return x-y;
+	  }
+	  
+	  //Recursion Example
+	  
+	  public static int sum(int x) {
+		  if (x>0) {
+			  return x + sum(x-1);
+		  }else {
+			  return 0;
+			  
+		  }
+	  }
 	  
  public Puppy(String name ) {
 	 //constructor with an parameter name
@@ -69,13 +89,16 @@ public class Puppy {
 		Puppy myPuppy = new Puppy("tommmy");
 		myMethod();
 		myMethod2("cute"); //cute is an argument
-		myMethod2("angry");
+		myMethod2("angry"); 
 		myMethod3("happy",2);
 		System.out.println(myMethod4(3));
 		System.out.println(myMethod5(3,5));
 		int z = myMethod6(5,5);
 		System.out.println(z);
 		myMethod7(20);
+		System.out.println(myMethod8(10,5));
+		System.out.println(myMethod8(10.5,5.5));
+		System.out.println(sum(10));
 		
 		
 	}
